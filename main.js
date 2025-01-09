@@ -80,7 +80,7 @@ ScrollReveal().reveal(".service__card", {
 });
 
 const swiper = new Swiper(".swiper", {
-  slidesPerView: 3,
+  slidesPerView: 1,
   spaceBetween: 20,
   loop: true,
   autoplay: {
@@ -89,17 +89,17 @@ const swiper = new Swiper(".swiper", {
     pauseOnMouseEnter: true
   },
   breakpoints: {
-    // when window width is <= 768px
-    768: {
+    // when window width is >= 1024px
+    1024: {
       slidesPerView: 3,
       spaceBetween: 20
     },
-    // when window width is <= 540px
-    540: {
+    // when window width is >= 768px
+    768: {
       slidesPerView: 2,
       spaceBetween: 15
     },
-    // when window width is < 540px
+    // when window width is < 768px
     0: {
       slidesPerView: 1,
       spaceBetween: 10
