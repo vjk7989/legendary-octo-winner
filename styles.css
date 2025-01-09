@@ -803,3 +803,72 @@ img.header__image-bg {
 .social-link:hover {
   opacity: 0.8;
 }
+
+@media (max-width: 768px) {
+  .client__card {
+    padding: 1rem;
+    margin: 0 0.5rem;
+  }
+
+  .client__details {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .client__details img {
+    max-width: 80px;
+    margin-bottom: 0.5rem;
+  }
+
+  .social-links {
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  .swiper-slide {
+    min-width: unset;
+  }
+}
+
+@media (max-width: 480px) {
+  .client__card {
+    padding: 0.8rem;
+  }
+
+  .client__details h4 {
+    font-size: 1rem;
+  }
+
+  .client__details h5 {
+    font-size: 0.9rem;
+  }
+
+  .social-link {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__image {
+    display: none;
+  }
+  
+  .header__container {
+    grid-template-columns: 1fr;
+  }
+
+  .header__content {
+    grid-area: auto;
+    padding: 2rem 1rem;
+  }
+
+  .header__content h1, 
+  .header__content h2,
+  .header__content p {
+    text-align: center;
+  }
+
+  .header__content :is(h4, .header__btn button) {
+    margin-inline: auto;
+  }
+}
